@@ -1,30 +1,39 @@
-# Use a lightweight and stable Python base image
-FROM python:3.11-slim
+# Use a Python 3.11 Alpine base image
+FROM python:3.11-alpine3.18
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# Copy all files from the current directory to the container's /app directory
+COPY . .
+
+# Install necessary dependencies
+RUN apk add --no-cache \
+    gcc \
+    libffi-dev \
+    musl-dev \
     ffmpeg \
     aria2 \
+    make \
+    g++ \
+    cmake \
     unzip \
-    wget \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Bento4 precompiled binary (mp4decrypt)
-RUN wget -q https://github.com/axiomatic-systems/Bento4/releases/download/v1.6.0-639/Bento4-SDK-1-6-0-639.x86_64-unknown-linux.zip \
-    && unzip Bento4-SDK-1-6-0-639.x86_64-unknown-linux.zip \
-    && cp Bento4-SDK-1-6-0-639.x86_64-unknown-linux/bin/mp4decrypt /usr/local/bin/ \
-    && rm -rf Bento4-SDK*
-
-# Copy project files into the container
-COPY . .
+    wget && \
+    wget -q https://github.com/axiomatic-systems/Bento4/archive/v1.6.0-639.zip && \
+    unzip v1.6.0-639.zip && \
+    cd Bento4-1.6.0-639 && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make -j$(nproc) && \
+    cp mp4decrypt /usr/local/bin/ && \
+    cd ../.. && \
+    rm -rf Bento4-1.6.0-639 v1.6.0-639.zip
 
 # Install Python dependencies
 RUN pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir --upgrade -r requirements.txt \
-    && pip3 install -U yt-dlp
+    && pip3 install --no-cache-dir --upgrade -r sainibots.txt \
+    && python3 -m pip install -U yt-dlp
 
-# Start the bot
-CMD ["python3", "main.py"]
+# Set the command to run the application
+CMD ["sh", "-c", "gunicorn app:app & python3 main.py"]
