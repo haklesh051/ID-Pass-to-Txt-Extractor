@@ -91,7 +91,7 @@ keyboard = InlineKeyboardMarkup(
 # Image URLs for the random image feature
 image_urls = [
     "https://i.postimg.cc/d0SScN1S/file-00000000bfe0622fa819cd4905b46476.png",
-    "https://i.postimg.cc/d0SScN1S/file-00000000bfe0622fa819cd4905b46476.png",
+    "https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
     # Add more image URLs as needed
 ]
 
@@ -625,7 +625,7 @@ async def cmd(client, callback_query):
     await callback_query.message.edit_media(
     InputMediaPhoto(
       media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
-      caption=caption
+      caption=captio
     ),
     reply_markup=keyboard
     )
@@ -663,7 +663,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -690,7 +690,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -765,7 +765,7 @@ async def cmd(client, callback_query):
     ])
     await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -782,7 +782,7 @@ async def cmd(client, callback_query):
     ])
     await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -800,7 +800,7 @@ async def cmd(client, callback_query):
     ])
     await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -1131,7 +1131,7 @@ async def feature_button(client, callback_query):
   ])
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -1143,7 +1143,7 @@ async def pin_button(client, callback_query):
   caption = f"**Auto Pin 📌 Batch Name :**\n\nAutomatically Pins the Batch Name in Channel or Group, If Starting from the First Link."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
       ),
       reply_markup=keyboard
@@ -1155,7 +1155,7 @@ async def watermark_button(client, callback_query):
   caption = f"**Custom Watermark :**\n\nSet Your Own Custom Watermark on Videos for Added Personalization."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
       ),
       reply_markup=keyboard
@@ -1167,7 +1167,7 @@ async def restart_button(client, callback_query):
   caption = f"**🔄 Reset Command:**\n\nIf You Want to Reset or Restart Your Bot, Simply Use Command /reset."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
       ),
       reply_markup=keyboard
@@ -1179,7 +1179,7 @@ async def pin_button(client, callback_query):
   caption = f"**🖨️ Bot Working Logs:**\n\n◆/logs - Bot Send Working Logs in .txt File."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://i.postimg.cc/PqfBj8MN/file-00000000df0c622fac07b8a7a580db2a.png",
       caption=caption
       ),
       reply_markup=keyboard
@@ -1191,7 +1191,7 @@ async def custom_button(client, callback_query):
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media=",
       caption=caption
       ),
       reply_markup=keyboard
