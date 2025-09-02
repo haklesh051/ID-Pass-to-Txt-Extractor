@@ -528,7 +528,7 @@ async def start(bot, m: Message):
     caption = f"🌟 Welcome {m.from_user.mention} ! 🌟"
     start_message = await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://envs.sh/GVI.jpg",
+        photo="https://i.postimg.cc/d0SScN1S/file-00000000bfe0622fa819cd4905b46476.png",
         caption=caption
     )
 
@@ -566,7 +566,7 @@ async def start(bot, m: Message):
             [InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("⚙️ Settings", callback_data="setttings")],
             [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://t.me/mr_x5_bot")],
         ])
         
         await start_message.edit_text(
@@ -581,7 +581,7 @@ async def start(bot, m: Message):
             [InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("⚙️ Settings", callback_data="setttings")],
             [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://t.me/mr_x5_bot")],
         ])
         await start_message.edit_text(
            f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
@@ -599,12 +599,12 @@ async def back_to_main_menu(client, callback_query):
             [InlineKeyboardButton("✨ Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("⚙️ Settings", callback_data="setttings")],
             [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ Repo", url="https://t.me/mr_x5_boy],
         ])
     
     await callback_query.message.edit_media(
       InputMediaPhoto(
-        media="https://envs.sh/GVI.jpg",
+        media="https://i.postimg.cc/d0SScN1S/file-00000000bfe0622fa819cd4905b46476.png",
         caption=caption
       ),
       reply_markup=keyboard
@@ -726,7 +726,7 @@ async def upgrade_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/GVI.jpg",
+      media="https://i.postimg.cc/d0SScN1S/file-00000000bfe0622fa819cd4905b46476.png",
       caption=caption
     ),
     reply_markup=keyboard
@@ -748,7 +748,7 @@ async def settings_button(client, callback_query):
 
     await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/GVI.jpg",
+      media="https://i.postimg.cc/d0SScN1S/file-00000000bfe0622fa819cd4905b46476.png",
       caption=caption
     ),
     reply_markup=keyboard
