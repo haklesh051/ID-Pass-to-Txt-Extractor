@@ -30,7 +30,7 @@ def categorize_urls(urls):
 
         elif "d1d34p8vz63oiq.cloudfront.net/" in url:
             vid_id = url.split("/")[-2]
-            new_url = f"https://anonymouspwplayer-0e5a3f512dec.herokuapp.com/pw?url={url}&token={your_working_token}"
+            new_url = f"https://anonymouspwplayer-0e5a3f512dec.herokuapp.com/pw?url={url}&token={eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NTczODIzMzUuNzAzLCJkYXRhIjp7Il9pZCI6IjY2NTYxNzg0OGUxYWIwMDAxODA1NDBkNCIsInVzZXJuYW1lIjoiODM4Nzg0MTg3NyIsImZpcnN0TmFtZSI6Ikhha2xlc2giLCJsYXN0TmFtZSI6IkJhaXJ3YSIsIm9yZ2FuaXphdGlvbiI6eyJfaWQiOiI1ZWIzOTNlZTk1ZmFiNzQ2OGE3OWQxODkiLCJ3ZWJzaXRlIjoicGh5c2ljc3dhbGxhaC5jb20iLCJuYW1lIjoiUGh5c2ljc3dhbGxhaCJ9LCJlbWFpbCI6Imhha2xlc2hnaHVuYXdhdDgwNkBnbWFpbC5jb20iLCJyb2xlcyI6WyI1YjI3YmQ5NjU4NDJmOTUwYTc3OGM2ZWYiXSwiY291bnRyeUdyb3VwIjoiSU4iLCJ0eXBlIjoiVVNFUiJ9LCJpYXQiOjE3NTY3Nzc1MzV9.4k_AWQxHQSbANNUTis5o4pJfKfuh_JYRVpKE0KhBXds}"
             videos.append((name, new_url))
                     
         elif "youtube.com/embed" in url:
