@@ -1,0 +1,14 @@
+{
+  "cptoken": [
+    "token1",
+    "token2",
+    "token3"
+  ],
+  "pwtoken": [
+    "tokenA",
+    "tokenB"
+  ],
+  "cwtoken": [
+    "tokenX"
+  ]
+}
